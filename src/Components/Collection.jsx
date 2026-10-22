@@ -10,7 +10,7 @@ function Collection() {
     const [itemsPerPage, setItemsPerPage] = useState(8);
     
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}items.json`)
+        fetch(`${import.meta.env.BASE_URL}Items.json`)
             .then((response) => {
                 if (!response.ok) throw new Error("Could not load Items.json");
                 return response.json();
