@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+    --brand-background: #17111B;
+    --accent-color: #C9A6E6;
+    --on-accent-color: #b798d1;
+    --card-surface: #221A28;
+    --line-color: #3A2E43;
+    --line-color-light: #50435a;
+    --text-light: #F3EBF4;
+    --text-muted: #B3A6BA;
+    --font-serif-georgian: "Noto Serif Georgian", Georgia, serif;
+    --font-sans-georgian: "Noto Sans Georgian", Arial, sans-serif;
+    --golden-color: #D2AE75;
+}   
+
+body {
+    background-color: var(--brand-background);
+    font-family: var(--font-serif-georgian);
+}
+body  *{
+    /* border: 1px dashed red; */
+}
+
+@theme inline {
+    --font-georgian-serif: var(--font-serif-georgian);
+    --font-georgian-sans: var(--font-sans-georgian);
+}
