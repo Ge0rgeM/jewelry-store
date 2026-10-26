@@ -1,11 +1,9 @@
-import React from 'react';
-
 function Card({ item, showDetails, setShowDetails }) {
     
     return (
-        <div className="w-62 bg-(--card-surface) border-(--line-color) border rounded-[18px] overflow-hidden">
+        <article className="w-full max-w-62 overflow-hidden rounded-[18px] border border-(--line-color) bg-(--card-surface)">
             <div className="">
-                <img src={item.img} alt={item.name_ge} className="" />
+                <img src={item.img} alt={item.name_ge} className="aspect-square w-full object-contain" />
             </div>
             <div className="">
                 <div className="px-3 py-2">
@@ -41,7 +39,7 @@ function Card({ item, showDetails, setShowDetails }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }
 

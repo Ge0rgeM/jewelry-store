@@ -31,12 +31,12 @@ function Collection() {
         currentPage * itemsPerPage
     );
     return(
-        <div className="text-(--text-light) mt-20">
-            <div className="text-[32px] font-bold mb-5">
+        <section id="collection" className="mt-12 text-(--text-light) sm:mt-20">
+            <div className="mb-5 text-[clamp(1.75rem,5vw,2rem)] font-bold">
                 <h1>კოლექცია</h1>
             </div>
             <div className="mb-5">
-                <label className="flex items-center gap-2">
+                <label className="flex flex-wrap items-center gap-2">
                     <span>პროდუქტების რაოდენობა:</span>
                     <select
                         value={itemsPerPage}
@@ -44,7 +44,7 @@ function Collection() {
                             setItemsPerPage(Number(event.target.value));
                             setCurrentPage(1);
                         }}
-                        className="border border-(--line-color-light) bg-(--card-surface) rounded-[15%] px-2 py-2"
+                        className="rounded-lg border border-(--line-color-light) bg-(--card-surface) px-3 py-2"
                     >
                         {[4, 8, 12, 16].map((count) => (
                             <option key={count} value={count}>{count}</option>
@@ -52,7 +52,7 @@ function Collection() {
                     </select>
                 </label>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4 place-items-center">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,15.5rem),1fr))] gap-4">
                 {
                     loading ? <p>Loading...</p> : 
                     error ? <p>{error}</p> : 
@@ -82,7 +82,7 @@ function Collection() {
                     </button>
                 </div>
             )}
-        </div>
+        </section>
     )
 }
 

@@ -8,7 +8,7 @@ import Collection from './Components/Collection.jsx'
 function App() {
 
   return (
-    <div className="max-w-300 h-screen px-10 py-5 m-auto">
+    <div className="mx-auto min-h-screen w-full max-w-300 px-4 py-4 sm:px-6 sm:py-5 lg:px-10">
       <Header />
       <Intro />
       <Collection />

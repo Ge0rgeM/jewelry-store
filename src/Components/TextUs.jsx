@@ -1,8 +1,8 @@
 function TextUs() {
     return (
-        <div className="text-(--text-light) mt-20 p-10 flex flex-row gap-5 bg-(--card-surface) border border-(--line-color) rounded-[18px]">
-            <div className="text-[32px] font-bold ">მოგვწერე</div>
-            <div className="w-full flex justify-end gap-5">
+        <section id="contact" className="mt-12 flex flex-col gap-5 rounded-[18px] border border-(--line-color) bg-(--card-surface) p-5 text-(--text-light) sm:mt-20 sm:flex-row sm:items-center sm:p-10">
+            <h2 className="text-[clamp(1.75rem,5vw,2rem)] font-bold">მოგვწერე</h2>
+            <div className="flex w-full flex-wrap gap-3 sm:justify-end sm:gap-5">
                 <a href="https://www.facebook.com/share/14v84X1A329/" target="_blank" className="">
                     <div className="text-(--text-light) font-bold border border-(--line-color) p-[12px_22px] rounded-4xl hover:bg-(--accent-color) hover:text-(--brand-background) transition-all duration-250 ease-in-out">
                         Facebook
@@ -14,7 +14,7 @@ function TextUs() {
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     );
 }
 

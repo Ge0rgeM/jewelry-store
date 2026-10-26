@@ -4,7 +4,7 @@ function Footer() {
     const { t } = useTranslation();
 
     return (
-        <footer className="text-(--text-muted) mt-20 pb-5">
+        <footer className="mt-12 pb-5 text-(--text-muted) sm:mt-20">
             <div className="container mx-auto">
                 <p className="">
                     &copy; {new Date().getFullYear()} {t('copyright')}
