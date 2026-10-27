@@ -7,7 +7,7 @@ function Collection() {
     const [loading, setLoading] = useState(true);
     const [showDetails, setShowDetails] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(8);
+    const [itemsPerPage, setItemsPerPage] = useState(5);
     
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}Items.json`)
@@ -46,13 +46,13 @@ function Collection() {
                         }}
                         className="rounded-lg border border-(--line-color-light) bg-(--card-surface) px-3 py-2"
                     >
-                        {[4, 8, 12, 16].map((count) => (
+                        {[5, 10, 15, 20].map((count) => (
                             <option key={count} value={count}>{count}</option>
                         ))}
                     </select>
                 </label>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,15.5rem),1fr))] gap-4">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,180px),1fr))] place-items-center gap-4">
                 {
                     loading ? <p>Loading...</p> : 
                     error ? <p>{error}</p> : 

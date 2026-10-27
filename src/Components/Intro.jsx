@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 function Intro() {
     const { t } = useTranslation();
     return (
-        <section className="mt-12 sm:mt-20">
+        <section className="mt-17 sm:mt-22">
             <div className="flex w-full flex-col gap-6 md:w-1/2 sm:gap-10">
                 <div className="w-full text-[clamp(2rem,6vw,3.125rem)] leading-[1.2] font-bold text-(--text-light)">
                     {t('title')}
